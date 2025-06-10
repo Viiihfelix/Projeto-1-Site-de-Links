@@ -24,30 +24,25 @@ h1 {
 }
 
 .buttonSocial {
+    display: flex;
+    align-items: center;
     border-radius: 50px;
     width: 255px;
     height: 40px;
-    display: block;
     background-color: #00000030;
     color: #ffffff;
     font-weight: 500;
     margin-bottom: 27px;
-    position: relative;
     cursor: pointer;
+    padding-left: 70px;
     
     img {
         height: 24px;
-        position: absolute;
-        left: 42px;
-        top: 9px;
     }
     
     p {
-        position: absolute;
-        left: 80px;
-        top: 12px; /* tamanho da altura do icone - tamanho da altura do texto = valor a ser distribuido ao redor do texto. 6px, 3 px em cima e 3px em baixo */
         font-size: 1.125rem; /* 18px / 16px (padrao) = 1.125rem */
-        line-height: 1.125rem;
+        padding-left: 15px;
     }
 
 }
@@ -56,10 +51,10 @@ h1 {
         background-color: #00000095;
 }
 
-#content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+#contentParent{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 }
 
